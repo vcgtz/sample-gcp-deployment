@@ -1,2 +1,2 @@
 console.log("Hello World!");
-cosole.log("This was deployed using GH Actions!");
+console.log("This was deployed using GH Actions!");
