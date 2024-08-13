@@ -18,5 +18,6 @@ jobs:
       run: |
         gcloud compute ssh ${{ secrets.GCP_INSTANCE_NAME }} --zone=${{ secrets.GCP_ZONE }} --command="
           cd /home/app/sample-gcp-deployment
+          git config --global --add safe.directory /home/app/sample-gcp-deployment
           git pull origin main
         "
